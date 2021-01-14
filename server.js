@@ -140,7 +140,7 @@ app.post('/signup', function (req, res, next) {
 });
 
 app.get('/logout', requireLogin, function (req, res, next) {
-	req.session.destroy();
+	req.session = null;
 	res.redirect('/login');
 });
 
