@@ -220,7 +220,7 @@ var transferFunds = function(to, from, start, amount, cb) {
 		return cb(new Error('Uhohh, looks like baby started the secret ending in the wrong place. Try again.'));
 	}
 
-	if (amount.gt(BigNumber(82)) {
+	if (amount.gt(BigNumber(82))) {
 		return cb(new Error('Oopsy daisy, baby tried asking for too many words. The secret ending isn\'t that long silly!'));
     }
 
