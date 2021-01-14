@@ -1,0 +1,24 @@
+<form action="/login" method="POST">
+	<p>Please use the following form to login.</p>
+	<div>
+		<label>Username: <input name="username" type="text" value="" autofocus></label>
+	</div>
+	<br>
+	<div>
+		<label>Password: <input name="password" type="password" value=""></label>
+	</div>
+	<br>
+	<div>
+		<input type="submit" value="Login">
+	</div>
+</form>
+<br>
+<p>Or sign up here.</p>
+
+<button id="myButton">Signup</button>
+
+<script type="text/javascript">
+	document.getElementById("myButton").onclick = function () {
+		location.href = "http://localhost:3000/signup";
+	};
+</script>

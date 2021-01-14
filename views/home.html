@@ -1,0 +1,39 @@
+<p>Welcome, baby {{username}}!</p>
+<p>You currently have story book balance of <code>{{balance}}</code> in your account.</p>
+<p>Use the form below to transfer funds to another account.</p>
+<form action="/transfer" method="POST">
+	<div>
+		<label>Send funds to account: <input type="text" name="to" value=""></label>
+	</div>
+	<br>
+	<div>
+		<label>Starting from: <input type="text" name="start" value=""></label>
+	</div>
+	<br>
+	<div>
+		<label>Amount: <input type="text" name="amount" value=""></label>
+	</div>
+	<br>
+	<div>
+		<input type="submit" value="Transfer">
+	</div>
+</form>
+<br>
+<p>If you feel like you have too much in your account, feel free to withdraw.</p>
+<form action="/withdraw" method="POST">
+	<div>
+		<label>Amount: <input type="text" name="amount" value=""></label>
+	</div>
+	<br>
+	<div>
+		<input type="submit" value="Withdraw">
+	</div>
+</form>
+<br>
+<button id="myButton">Logout</button>
+
+<script type="text/javascript">
+	document.getElementById("myButton").onclick = function () {
+		location.href = "http://localhost:3000/logout";
+	};
+</script>

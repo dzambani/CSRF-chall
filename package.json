@@ -1,0 +1,19 @@
+{
+  "name": "csrf-challenge",
+  "version": "1.0.0",
+  "description": "Baby's first CSRF exploit.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \no test\" && exit 1"
+  },
+  "dependencies": {
+    "bignumber.js": "4.0.0",
+    "body-parser": "1.16.1",
+    "express": "4.14.1",
+    "express-handlebars": "3.0.0",
+    "express-session": "1.15.1",
+    "serve-static": "1.11.2",
+    "underscore": "1.8.3"
+  }
+}
