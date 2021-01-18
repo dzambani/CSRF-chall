@@ -8,15 +8,6 @@ Example Cross Site Request Forgery (CSRF) vulnerabilities in action.
 * [git](https://git-scm.com/downloads)
 * [NodeJS](https://nodejs.org/en/)
 
-
-## Get the Code
-
-Download the code for this project by using git clone:
-```bash
-git clone https://github.com/Learn-by-doing/csrf-examples.git
-```
-
-
 ## Install Node Modules
 
 Like any node project, you will need to download and install the required node modules for the project to run. Change into the "csrf-examples" directory:
