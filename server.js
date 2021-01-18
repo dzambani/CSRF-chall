@@ -295,7 +295,7 @@ var withdrawFunds = function (from, amount, cb) {
 	cb();
 };
 
-app.listen(80, function() {
-	console.log('Server started and listening at port 80');
+app.listen(443, function() {
+	console.log('Server started and listening at port 443');
 });
 
