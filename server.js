@@ -299,25 +299,3 @@ app.listen(3000, function() {
 	console.log('Server started and listening at localhost:3000');
 });
 
-var evilApp = express();
-
-evilApp.engine('html', exphbr({
-	defaultLayout: 'main',
-	extname: '.html'
-}));
-
-evilApp.set('view engine', 'html');
-evilApp.use(express.static(__dirname + '/views'));
-
-evilApp.get('/', function (req, res, next) {
-	res.render('evil-examples');
-});
-
-evilApp.get('/malicious-form', function (req, res, next) {
-	res.render('malicious-form');
-});
-
-evilApp.listen(3001, function () {
-	console.log('"Evil" server started and listening at localhost:3001');
-});
-
