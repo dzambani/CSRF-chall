@@ -8,11 +8,13 @@
     "test": "echo \no test\" && exit 1"
   },
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "bignumber.js": "4.0.0",
     "body-parser": "1.16.1",
     "express": "4.14.1",
     "express-handlebars": "3.0.0",
     "express-session": "1.15.1",
+    "fs": "0.0.1-security",
     "serve-static": "1.11.2",
     "underscore": "1.8.3"
   }
