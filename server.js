@@ -9,6 +9,7 @@ var app = express();
 const fs = require('fs');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+var port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -295,7 +296,7 @@ var withdrawFunds = function (from, amount, cb) {
 	cb();
 };
 
-app.listen(443, function() {
-	console.log('Server started and listening at port 443');
+app.listen(port, function() {
+	console.log('Server started and listening at port' + port);
 });
 
