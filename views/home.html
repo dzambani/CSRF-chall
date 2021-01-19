@@ -1,36 +1,35 @@
-<p>Welcome, baby {{username}}!</p>
-<p>You currently have story book balance of <code>{{balance}}</code> in your account.</p>
-<p>Use the form below to transfer funds to another account.</p>
+<h3>welcome, baby {{username}}!</h3>
+<p>you currently have story book balance of <br><code>{{balance}}</code><br> in your account.</p>
+<h3>transfer to another baby here.</h3>
 <form action="/transfer" method="POST">
 	<div>
-		<label>Send funds to account: <input type="text" name="to" value=""></label>
+		<label>send funds to baby: <input type="text" name="to" value=""></label>
 	</div>
 	<br>
 	<div>
-		<label>Starting from: <input type="text" name="start" value=""></label>
+		<label>starting from: <input type="text" name="start" value=""></label>
 	</div>
 	<br>
 	<div>
-		<label>Amount: <input type="text" name="amount" value=""></label>
+		<label>amount: <input type="text" name="amount" value=""></label>
 	</div>
 	<br>
 	<div>
-		<input type="submit" value="Transfer">
+		<input type="submit" value="transfer">
 	</div>
 </form>
-<br>
-<p>If you feel like you have too much in your account, feel free to withdraw.</p>
+<h3>if you feel like you have too much in your account, feel free to withdraw.</h3>
 <form action="/withdraw" method="POST">
 	<div>
-		<label>Amount: <input type="text" name="amount" value=""></label>
+		<label>amount: <input type="text" name="amount" value=""></label>
 	</div>
 	<br>
 	<div>
-		<input type="submit" value="Withdraw">
+		<input type="submit" value="withdraw">
 	</div>
 </form>
 <br>
-<button id="myButton">Logout</button>
+<button id="myButton">logout</button>
 
 <script type="text/javascript">
 	document.getElementById("myButton").onclick = function () {
