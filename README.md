@@ -1,8 +1,3 @@
-# CSRF Examples
-
-Example Cross Site Request Forgery (CSRF) vulnerabilities in action.
-
-
 ## Requirements
 
 * [git](https://git-scm.com/downloads)
@@ -10,12 +5,8 @@ Example Cross Site Request Forgery (CSRF) vulnerabilities in action.
 
 ## Install Node Modules
 
-Like any node project, you will need to download and install the required node modules for the project to run. Change into the "csrf-examples" directory:
-```bash
-cd csrf-examples
-```
+Like any node project, you will need to download and install the required node modules for the project to run: 
 
-And then:
 ```bash
 npm install
 ```
